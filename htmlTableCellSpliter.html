@@ -3,17 +3,49 @@
     <head>
         <meta charset="UTF-8" />
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
-        <meta name = "description" content = "This page is use for test javascript file on src attribute of script tag bellow" />
+        <meta name = "description" content = "Page for testing script file for table cell spliter." />
+        <meta name = "author" content = "Randriantsoa Solo Manantena" />
+        <link rel="stylesheet" href="./styles/htmlTableCellSplitStyle.css" />
         <title>Table cell spliter</title>
-        <script type="text/javascript" src=".\htmlTableCellSplit.js"></script>
     </head>
     <body>
         <main>
-            <table>
-                <tr ><td style="border: 1px black solid;" colspan="3">0</td><td style="border: 1px black solid;" rowspan="3">0</td></tr>
-                <tr ><td style="border: 1px black solid;" colspan="2">0</td><td style="border: 1px black solid;">0</td><td style="border: 1px black solid;">0</td></tr>
-                <tr ><td style="border: 1px black solid;">0</td><td style="border: 1px black solid;">0</td></tr>
-            </table>
+            <h1>Table cell spliter</h1>
+            <p>
+                This is my personnal version of one challenge in codingame.
+            </p>
+            <div class="d-flex">
+                <table id="mainTable">
+                    <tbody>
+                        <tr><td colspan="3"></td><td rowspan="3"></td></tr>
+                        <tr><td colspan="2"></td><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                    </tbody>
+                </table>
+                <form id="form">
+                    <ol>
+                        <li>
+                            <label for="numRow">Write your number of row that you want :
+                                <input type="number" name="numRow" id="numRow" placeholder="Please write only digit, example : 4 or 22"/>
+                                <button id="buttonNumRow" role="Valide number Row input">Valide</button>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="cellConfig">Write a sequence of cell configuration that you want :
+                                <input type="text" name="cellConfig" id="cellConfig" placeholder="Example : 1,4 1,1 or 2,1 1,3"/>
+                                <button id="buttonCellConfig" role="Valide sequence of cell configuration">Valide</button>
+                            </label>
+                        </li>
+                        <li>
+                            <label>Write the change you want to do :
+                                <input type="text" name="cellToDuplicate" placeholder="Example : 3,C or 1,R where C mean Column and R mean Row" />
+                                <button id="buttonChange" role="Valide a change to apply">Change</button>
+                            </label>
+                        </li>
+                    </ol>
+                </form>
+            </div>
         </main>
     </body>
+    <script type="text/javascript" src=".\htmlTableCellSplit.js"></script>
 </html>

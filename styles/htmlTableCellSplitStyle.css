@@ -1,0 +1,83 @@
+/*This file contain style code for the html page*/
+
+/*Global styles*/
+:root,* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(54, 65, 65);
+}
+
+main {
+    width: 90%;
+    margin: 5px auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: azure;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+table {
+    border: 1px solid lavender;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 10px;
+    background-color: lavender;
+    padding: 10px;
+}
+
+td {
+    border: 6px solid mediumorchid;
+    background-color: magenta;
+    border-radius: 7px;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 0.7rem;
+    border: 1px gray dashed;
+    padding: 1rem;
+    background-color: darkmagenta;
+    color: white;
+    border-radius: 7px;
+}
+
+form label input {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+form ol {
+    margin: 0;
+}
+
+form ol li {
+    color: darkmagenta;
+}
+
+main div.d-flex {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+/*End Global styles*/
+
+/*Action section*/
+
+/*End of action section*/
