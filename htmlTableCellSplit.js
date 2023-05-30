@@ -8,3 +8,12 @@ var inputs = readline().split(' ');
 const IS = parseInt(inputs[0]);
 const DS = inputs[1];
 */
+class MyGeninericComponent extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        
+    }
+}
